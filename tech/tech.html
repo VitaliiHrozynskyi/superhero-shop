@@ -1,19 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="../reset.css"/>
-    <link rel="stylesheet" href="tech.css"/>
-    <link rel="stylesheet" href="../style.css"/>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="stylesheet" href="tech.css" />
+    <link rel="stylesheet" href="../style.css" />
     <title>Base Tech</title>
   </head>
   <body>
     <div class="tech__content">
-      <div class="techBlock"><div class="button selectable">my button</div></div>
-      <div class="techBlock"><div class="button button--full selectable">my button</div></div>
+      <div class="techBlock">
+        <div class="button selectable">my button</div>
+      </div>
+      <div class="techBlock">
+        <div class="button button--full selectable">my button</div>
+      </div>
     </div>
+
+    <div class="color-card selectable">
+      <div class="color-card__gradient"></div>
+      <img class="color-card__img" src="./img/Spiderman.png" alt="" />
+    </div>
+
+    <script>
+      var rgb = getAverageRGB(document.querySelector(".color-card__img"));
+      document.querySelector(".color-card__gradient").style.background =
+        "linear-gradient(to top, rgba(" +
+        rgb.r +
+        "," +
+        rgb.g +
+        "," +
+        rgb.b +
+        ", 1), rgba(" +
+        rgb.r +
+        "," +
+        rgb.g +
+        "," +
+        rgb.b +
+        ", 0))";
+
+      function getAverageRGB(imgEl) {
+        var blockSize = 5, // only visit every 5 pixels
+          defaultRGB = { r: 0, g: 0, b: 0 }, // for non-supporting envs
+          canvas = document.createElement("canvas"),
+          context = canvas.getContext && canvas.getContext("2d"),
+          data,
+          width,
+          height,
+          i = -4,
+          length,
+          rgb = { r: 0, g: 0, b: 0 },
+          count = 0;
+
+        if (!context) {
+          return defaultRGB;
+        }
+
+        height = canvas.height; // = imgEl.height;
+        width = canvas.width; // = imgEl.width;
+
+        context.drawImage(imgEl, 0, 0);
+
+        try {
+          data = context.getImageData(0, 0, width, height);
+        } catch (e) {
+          /* security error, img on diff domain */ alert("x");
+          return defaultRGB;
+        }
+
+        length = data.data.length;
+        while ((i += blockSize * 4) < length) {
+          ++count;
+
+          rgb.r += data.data[i];
+          rgb.g += data.data[i + 1];
+          rgb.b += data.data[i + 2];
+        }
+
+        // ~~ used to floor values
+        rgb.r = ~~(rgb.r / count);
+        rgb.g = ~~(rgb.g / count);
+        rgb.b = ~~(rgb.b / count);
+
+        return rgb;
+      }
+    </script>
+
     <script src="tech.js" type="text/javascript"></script>
     <script src="../index.js" type="text/javascript"></script>
   </body>
