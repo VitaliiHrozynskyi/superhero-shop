@@ -11,3 +11,42 @@
 .button--full{
   display: block;
 }
+
+body{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.client-address{
+  display: grid;
+  grid-template-areas:
+    "u i"
+    "c c";
+  max-width: 140px;
+}
+
+.client-address__user-name{
+  grid-area: u;
+  font-weight: 500;
+  height: 30px;
+}
+
+.client-address__icon{
+  grid-area: i;
+  display: flex;
+  justify-content: flex-end;
+}
+.kebab-icon{
+  max-width: 18px;
+  height: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+.client-address__content{
+  grid-area: c;
+}
+ul li{
+  text-decoration: none;
+}
