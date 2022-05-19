@@ -12,25 +12,21 @@
   display: block;
 }
 
-body{
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  color: #000000;
-}
 
 .client-address{
   display: grid;
   grid-template-areas:
     "u i"
     "c c";
-  max-width: 140px;
 }
 
 .client-address__user-name{
   grid-area: u;
   font-weight: 500;
   height: 30px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
 }
 
 .client-address__icon{
@@ -46,7 +42,10 @@ body{
 }
 .client-address__content{
   grid-area: c;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
 }
-ul li{
-  text-decoration: none;
-}
+.address{}
+.phone{}
