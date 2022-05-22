@@ -1,3 +1,16 @@
+.button{
+  padding:5px 15px;
+  border:1px solid black;
+  border-radius: 10px;
+  background: aliceblue;
+  display: inline-block;
+  text-align: center;
+  min-width: 150px;
+}
+
+.button--full{
+  display: block;
+}
 .footer{
   max-width: 100%;
   height: 347px;
@@ -7,14 +20,14 @@
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.leftPart{
+.footer__leftPart{
   height: 170px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
 }
-.logo{
+.footer-logo{
   width: 233px;
   height: 65px;
   font-size: 12px;
@@ -38,22 +51,22 @@
   font-size: 12px;
   color: #7C7C7C;
 }
-.rightPart{
+.footer__rightPart{
   display: flex;
   width: 300px;
   justify-content: space-between;
 }
-.menu{
+.footer-menu{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   height: 100px;
 }
-.menu__item{
+.footer-menu__item{
   font-size: 12px;
   cursor: pointer;
 }
-.menu__item-bold{
+.footer-menu__item_bold{
   font-weight: bold;
 }
