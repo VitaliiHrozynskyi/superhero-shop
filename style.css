@@ -12,9 +12,8 @@
   display: block;
 }
 .footer{
-  max-width: 100%;
-  height: 347px;
-  background-color: white;
+  width: 100%;
+  min-height: 347px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -31,11 +30,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 .social{
   display: flex;
-  justify-content: flex-start;
   gap: 17px;
 }
 .social__item{
@@ -47,21 +44,16 @@
 }
 .footer__rightPart{
   display: flex;
-  width: 300px;
-  justify-content: space-between;
+  gap: 57px;
 }
 .footer-menu{
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  /*height: 100px;*/
   gap: 18px;
 }
 .footer-menu__item{
   font-size: 12px;
   text-decoration: none;
-  cursor: pointer;
   color: black;
 }
 .footer-menu__item_bold{
