@@ -12,7 +12,6 @@
   display: block;
 }
 .footer{
-  width: 100%;
   min-height: 347px;
   display: flex;
   align-items: center;
@@ -58,6 +57,5 @@
 }
 .footer-menu__item_bold{
   font-weight: bold;
-  cursor: default;
 }
 
