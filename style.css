@@ -153,4 +153,37 @@
   }
 }
 
+.titled-card {
+  width: 196px;
+  height: 294px;
+  border-radius: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.titled-card__image {
+  width: 196px;
+  height: 294px;
+}
+
+.titled-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titled-card__name {
+  width: 100%;
+  height: 70px;
+  border-radius: 35px;
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+  bottom: 0;
+  backdrop-filter: blur(10px);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
