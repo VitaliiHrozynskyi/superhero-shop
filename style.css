@@ -13,15 +13,11 @@
 }
 
 .heading1 {
-  margin-bottom: 16px;
   font-weight: bold;
   font-size: 22px;
 }
 
 .heading2 {
-  display: inline-block;
-  border-bottom: 1px solid #00FF;
-  margin-bottom: 10px;
   font-weight: bold;
   font-size: 20px;
 }
