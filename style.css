@@ -12,6 +12,29 @@
   display: block;
 }
 
+.heading1 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.heading2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.heading3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.heading4 {
+  font-size: 16px;
+}
+
+.heading5 {
+  font-size: 14px;
+}
+
 .color-card {
   position: relative;
   border-radius: 10px;
