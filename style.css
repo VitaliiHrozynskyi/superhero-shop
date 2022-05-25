@@ -11,3 +11,40 @@
 .button--full{
   display: block;
 }
+
+.client-address{
+  position: relative;
+}
+
+.client-address__name{
+  display: flex;
+  align-items: flex-start;
+  font-weight: 500;
+  height: 30px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.client-address__icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.kebab-menu{
+  width: 18px;
+  height: 18px;
+}
+
+.client-address__info{
+  display: flex;
+  align-content: flex-start;
+  width: 125px;
+  height: 70px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
