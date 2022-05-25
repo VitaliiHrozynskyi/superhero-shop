@@ -11,3 +11,25 @@
 .button--full{
   display: block;
 }
+
+.client-address{
+  position: relative;
+}
+
+.client-address__name{
+  min-height: auto;
+}
+
+.client-address__icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.kebab-icon{
+  background-image: url("imge/pngwing.com.png");
+}
+
+.client-address__info{
+  min-height: auto;
+}
