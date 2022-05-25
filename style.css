@@ -152,7 +152,34 @@
     width: 20%;
   }
 }
+.form-input{
+position: relative;
+}
+.input-text{
+  height:28px;
+  width: 99%;
+  background-color: #DBDBDB;
+  border: none;
+  padding-left: 1%;
+  caret-color: #00A3FF;
+}
 
+.input-text:focus{
+  background-color: white;
+  outline-color: #DBDBDB;
+}
+.input-text_full{
+  border-radius: 20px;
+}
+.input-text_right{
+  border-radius: 0 20px 20px 0;
+}
+.input-text_left{
+  border-radius: 20px 0 0 20px;
+}
+.form-input_big{
+  position: relative;
+}
 .titled-card {
   width: 196px;
   height: 294px;
@@ -187,3 +214,23 @@
 }
 
 
+.input-text_big{
+  height: 35px;
+  border:1px solid #DBDBDB;
+  background-color: white;
+}
+.input-text-icon{
+  border: solid red 1px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #ec1d24;
+  position: absolute;
+  top: -3px;
+  right: -4px;
+}
+.input-text-img{
+  position:absolute;
+  top: 12px;
+  right: 10px;
+}
