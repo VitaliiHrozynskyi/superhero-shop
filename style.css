@@ -17,7 +17,7 @@
 }
 
 .client-address__name{
-  min-height: auto;
+
 }
 
 .client-address__icon{
@@ -28,8 +28,10 @@
 
 .kebab-icon{
   background-image: url("imge/pngwing.com.png");
+  height: 18px;
+  width: 18px;
 }
 
 .client-address__info{
-  min-height: auto;
+
 }
