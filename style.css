@@ -12,6 +12,30 @@
   display: block;
 }
 
+.client-address{
+  position: relative;
+}
+
+.client-address__name{
+
+}
+
+.client-address__icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.kebab-icon{
+  background-image: url("imge/pngwing.com.png");
+  height: 18px;
+  width: 18px;
+}
+
+.client-address__info{
+
+}
+
 .heading1 {
   font-weight: bold;
   font-size: 22px;
