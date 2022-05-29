@@ -53,18 +53,19 @@
   justify-content: space-between;
   gap: 17px;
 }
-
-.footer-icons a {
+ 
+.icon {
   display: block;
-  height: 100%; 
-}
-
-a.icon {
   width: 37.5px;
   height: 37.5px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.icon a {
+  display: block;
+  height: 100%;
 }
 
 .icon_instagram {
@@ -120,7 +121,7 @@ a.icon {
    gap: 10px;
   }
 
-  a.icon {
+  .icon {
     width: 27.5px;
     height: 27.5px;
   }
@@ -133,6 +134,7 @@ a.icon {
   .footer-menu__item  {
     gap: 11px;
   }
+}
 
 @media screen and (max-width:480px) {
   .footer__info {
@@ -154,7 +156,7 @@ a.icon {
     gap: 8px;
    }
  
-   a.icon {
+  .icon {
      width: 20.5px;
      height: 20.5px;
    }
@@ -163,18 +165,16 @@ a.icon {
     min-height: 82px;
     gap: 8px;
   }
-}
 
   .footer-menu__item  {
     gap: 8px;
   }
+}
 
 @media screen and (max-width:320px) {
   .footer {
-    display: flex;
     flex-direction: column-reverse;
     justify-content: center;
-    align-items: center;
   }
 
   .footer__info {
